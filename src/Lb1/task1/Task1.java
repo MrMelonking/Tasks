@@ -30,6 +30,7 @@ public class Task1 {
         System.out.println(substrInt);
         System.out.println(multiInt);
         System.out.println(diviInt);
+        System.out.println();
         System.out.println(sumFloat);
         System.out.println(substrFloat);
         System.out.println(multiFloat);
