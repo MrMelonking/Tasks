@@ -1,42 +1,54 @@
 package Lb1.task1;
 
 
+import java.util.Scanner;
+
 public class Task1 {
     public static void main(String[] args) {
 
+        Scanner scanner = new Scanner(System.in);
 
-        int number1 = 3;
-        int number2 = 6;
-        float number3 = 5.1f;
-        float number4 = 10.4f;
+        int int1 = scanner.nextInt();
+        int int2 = scanner.nextInt();
 
-        int sumInt = number1 + number2;
+        double double1 = scanner.nextDouble();
+        double double2 = scanner.nextDouble();
+
+
+        System.out.println("Операції над типом int:");
+        int sumInt = int1 + int2;
         System.out.println(sumInt);
-        int substrInt = number2 - number1;
+
+        int substrInt = int1 - int2;
         System.out.println(substrInt);
-        int multiInt = number1 * number2;
+
+        int multiInt = int1 * int2;
         System.out.println(multiInt);
-        int diviInt = number2 / number1;
+
+        int diviInt = int1 / int2;
         System.out.println(diviInt);
-
         System.out.println();
 
-        float sumFloat = number3 + number4;
+
+        System.out.println("Операції над типом double:");
+        double sumFloat = double1 + double2;
         System.out.println(sumFloat);
-        float substrFloat = number4 - number3;
-        System.out.println(substrFloat);
-        float multiFloat = number3 * number4;
-        System.out.println(multiFloat);
-        float diviFloat = number4 / number3;
-        System.out.println(diviFloat);
 
+        double substrFloat = double1 - double2;
+        System.out.println(substrFloat);
+
+        double multiFloat = double1 * double2;
+        System.out.println(multiFloat);
+
+        double diviFloat = double1 / double2;
+        System.out.println(diviFloat);
         System.out.println();
 
-        float substrIntFloat = number4 - number1;
-        System.out.println(substrIntFloat);
-        float multiIntFloat = number3 * number2;
-        System.out.println(multiIntFloat);
+
+        System.out.println("Операції над змінними різного типу:");
+        double substrIntDouble = double1 - int1;
+        System.out.println(substrIntDouble);
+        double multiIntDouble = double1 * int2;
+        System.out.println(multiIntDouble);
     }
-
-
 }

@@ -1,25 +1,19 @@
 package Lb1.Task4;
 
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class Task4 {
 
-    public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    public static void main(String[] args)  {
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Введіть чотири цифри:");
-        String number1 = reader.readLine();
-        String number2 = reader.readLine();
-        String number3 = reader.readLine();
-        String number4 = reader.readLine();
 
-        double Number1 = Integer.parseInt(number1);
-        double Number2 = Integer.parseInt(number2);
-        double Number3 = Integer.parseInt(number3);
-        double Number4 = Integer.parseInt(number4);
+        double Number1 = scanner.nextDouble();
+        double Number2 = scanner.nextDouble();
+        double Number3 = scanner.nextDouble();
+        double Number4 = scanner.nextDouble();
 
         System.out.println();
 

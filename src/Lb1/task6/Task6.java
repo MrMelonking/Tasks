@@ -1,16 +1,15 @@
 package Lb1.task6;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+
+import java.util.Scanner;
 
 public class Task6 {
-        public static void main(String[] args) throws IOException {
-            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        public static void main(String[] args)  {
+            Scanner scanner = new Scanner(System.in);
 
-            String number = reader.readLine();
+            System.out.println("Введіть бажане число:");
 
-            int numberInt = Integer.parseInt(number);
+            int numberInt = scanner.nextInt();
 
             if (numberInt % 2 != 0){
                 System.out.println("Число непарне");

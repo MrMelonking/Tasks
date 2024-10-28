@@ -1,27 +1,25 @@
 package Lb1.task9;
 
-import javax.imageio.IIOException;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+
+import java.util.Scanner;
 
 public class Task9 {
-    public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    public static void main(String[] args)  {
+        Scanner scanner = new Scanner(System.in);
 
-        double price1 = 50.9;
-        double sale1 = 0.3;
-        int amountForSaleFirst = 100;
+        double price1 = 64.29;
+        double sale1 = 0.1;
+        int amountForSaleFirst = 70;
         double sum1;
 
-        double price2 = 62.42;
-        double sale2 = 0.1;
-        int amountForSaleSecond = 150;
+        double price2 = 165.09;
+        double sale2 = 0.5;
+        int amountForSaleSecond = 200;
         double sum2;
 
 
         System.out.println("Введіть дані для першого товару:");
-        int amountOfFirstProduct = Integer.parseInt(reader.readLine());
+        int amountOfFirstProduct = scanner.nextInt();
 
         if (amountOfFirstProduct < amountForSaleFirst){
             sum1 = price1 * amountOfFirstProduct;
@@ -32,7 +30,7 @@ public class Task9 {
             System.out.println("До сплати: " + sum1);
         }
         System.out.println("Введіть дані для другого товару:");
-        int amountOfSecondProduct = Integer.parseInt(reader.readLine());
+        int amountOfSecondProduct = scanner.nextInt();
 
 
         if (amountOfSecondProduct < amountForSaleSecond){

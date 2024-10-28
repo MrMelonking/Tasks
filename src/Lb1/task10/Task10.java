@@ -11,7 +11,7 @@ public class Task10 {
         System.out.println("Введіть суму кредиту: ");
         double creditAmount = scanner.nextDouble();
 
-        System.out.println("Введіть місячну ставку: ");
+        System.out.println("Введіть місячну ставку у відсотках: ");
         double monthlyInterest = scanner.nextDouble() * 0.01;
 
         double totalPaid = 0;
@@ -29,7 +29,6 @@ public class Task10 {
         }
         System.out.println("Всього сплачено за кредитом: " + totalPaid);
 
-        scanner.close();
     }
 }
 
