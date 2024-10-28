@@ -74,7 +74,8 @@ public class LineCircleIntersection extends Frame implements ActionListener {
             double xi = x1 + t * dx;
             double yi = y1 + t * dy;
             resultLabel.setText("Intersection: (" + xi + ", " + yi + ")");
-        } else {
+        }
+        else {
             double t1 = (-b + Math.sqrt(d)) / (2 * a);
             double t2 = (-b - Math.sqrt(d)) / (2 * a);
             double xi1 = x1 + t1 * dx;
