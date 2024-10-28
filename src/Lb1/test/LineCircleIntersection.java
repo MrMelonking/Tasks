@@ -54,7 +54,8 @@ public class LineCircleIntersection extends Frame implements ActionListener {
             cx = Double.parseDouble(circleX.getText());
             cy = Double.parseDouble(circleY.getText());
             r = Double.parseDouble(circleR.getText());
-        } catch (NumberFormatException ex) {
+        }
+        catch (NumberFormatException ex) {
             resultLabel.setText("Invalid input");
             return;
         }
